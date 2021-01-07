@@ -1,17 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,700&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 
-@font-face {
-  font-family: "Play";
-  font-display: swap;
-  src: url("../fonts/playbold.woff") format("woff"), url("../fonts/playbold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;
+
+300;400;700;900&display=swap");
 @font-face {
-  font-family: "UniSans";
+  font-family: "akzidenz";
   font-display: swap;
-  src: url("../fonts/UniSansHeavyCAPS.woff") format("woff"), url("../fonts/UniSansHeavyCAPS.woff2") format("woff2");
+  src: url("../fonts/AkzidenzGroteskBQ-BdCnd.woff") format("woff"), url("../fonts/AkzidenzGroteskBQ-BdCnd.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
