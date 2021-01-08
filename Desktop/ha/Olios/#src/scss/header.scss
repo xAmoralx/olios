@@ -1,0 +1,27 @@
+h1 {
+    font-family: "LatoThin";
+    font-size: 220px;
+};
+
+h2 {
+    font-family: "LatoLight";
+    font-size: 36px;
+};
+
+.header {
+
+    // .header__wrap
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .header__view-button
+
+    &__view-button {
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 18px;
+    }
+};

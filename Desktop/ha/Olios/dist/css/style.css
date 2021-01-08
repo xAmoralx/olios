@@ -1,16 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;
-
-300;400;700;900&display=swap");
 @font-face {
-  font-family: "akzidenz";
-  font-display: swap;
-  src: url("../fonts/AkzidenzGroteskBQ-BdCnd.woff") format("woff"), url("../fonts/AkzidenzGroteskBQ-BdCnd.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
+  font-family: "AkzidenzGrotesk";
+  src: url("../fonts/AkzidenzGroteskBQ-BdCnd.woff");
+}
+
+@font-face {
+  font-family: "LatoRegular";
+  src: url("../fonts/Lato-Regular.woff");
+}
+
+@font-face {
+  font-family: "LatoThin";
+  src: url("../fonts/Lato-Thin.woff");
+}
+
+@font-face {
+  font-family: "LatoBlack";
+  src: url("../fonts/Lato-Black.woff");
+}
+
+@font-face {
+  font-family: "LatoBold";
+  src: url("../fonts/Lato-Bold.woff");
+}
+
+@font-face {
+  font-family: "LatoLight";
+  src: url("../fonts/Lato-Light.woff");
 }
 
 * {
@@ -127,6 +142,32 @@ body._lock {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0px 20px;
+}
+
+h1 {
+  font-family: "LatoThin";
+  font-size: 220px;
+}
+
+h2 {
+  font-family: "LatoLight";
+  font-size: 36px;
+}
+
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__view-button {
+  font-family: "Lato";
+  font-weight: 900;
+  font-size: 18px;
 }
 @supports (-webkit-appearance:none){
 
