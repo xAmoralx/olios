@@ -1,6 +1,3 @@
-@@include('alert.js')
-
-
 function testWebP(callback) {
     var webP = new Image();
     webP.onload = webP.onerror = function () {
@@ -15,3 +12,17 @@ testWebP(function (support) {
     document.querySelector('body').classList.add('no-webp');
     }
 });
+
+$('.header__burger').click(function() {
+//    $('.header__menu').addClass('header__menu_active')
+    $('.header__menu').fadeToggle(400);
+});
+
+$('h1').hover(function () { 
+    $('h1').addClass('animate__animated animate__bounce')
+});
+
+$('h1').mouseleave(function () { 
+    $('h1').removeClass('animate__animated animate__bounce')
+});
+

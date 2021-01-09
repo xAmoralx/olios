@@ -119,6 +119,10 @@ h6 {
 body {
   color: #000;
   font-size: 14px;
+  background-image: url(../img/main-bg-img.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 body._lock {
@@ -147,6 +151,9 @@ body._lock {
 h1 {
   font-family: "LatoThin";
   font-size: 220px;
+  margin-bottom: 0;
+  z-index: 5;
+  position: relative;
 }
 
 h2 {
@@ -154,7 +161,108 @@ h2 {
   font-size: 36px;
 }
 
-.header__wrap {
+h3 {
+  font-family: "LatoBlack";
+  font-size: 400px;
+  opacity: 2%;
+}
+
+.unselectable {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.header__bg-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header__view-button {
+  font-family: "LatoBlack";
+  font-size: 18px;
+  background-color: #0023ff;
+  color: white;
+  padding: 14px 54px;
+  border-radius: 30px 30px;
+}
+
+.header__view-button-wrap {
+  margin-top: 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.header__burger {
+  display: block;
+  position: relative;
+  width: 13px;
+  height: 12px;
+}
+
+.header .burger__wrap {
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 50%;
+}
+
+.header__burger span {
+  background-color: #0023ff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 5px;
+}
+
+.header__burger::before,
+.header__burger::after {
+  content: "";
+  background-color: #0023ff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.header__burger::before {
+  top: 0;
+}
+
+.header__burger::after {
+  bottom: 0;
+}
+
+.header__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,11 +272,11 @@ h2 {
           flex-direction: column;
 }
 
-.header__view-button {
-  font-family: "Lato";
-  font-weight: 900;
+.header__link {
+  color: #c1c1c1;
+  font-family: "LatoRegular";
   font-size: 18px;
 }
 @supports (-webkit-appearance:none){
-
+body{background-image:url(../img/main-bg-img.webp)}
 }
