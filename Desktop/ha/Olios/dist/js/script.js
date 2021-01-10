@@ -18,6 +18,15 @@ $('.header__burger').click(function() {
     $('.header__menu').fadeToggle(400);
 });
 
+$('.header__burger').click(function() {
+        $('.header__burger').ClassToggleSwitch('.header__burger_active');
+        $('.burger__wrap').ClassToggleSwitch('.burger__wrap_active');
+        $('.header__burger span').ClassToggleSwitch('.header__burger_active span');
+        $('.header__burger::before').ClassToggleSwitch('.header__burger_active::before');
+        $('.header__burger::after').ClassToggleSwitch('.header__burger_active::after');
+       // $('.header__menu').fadeToggle(400);
+    });
+
 $('h1').hover(function () { 
     $('h1').addClass('animate__animated animate__bounce')
 });
