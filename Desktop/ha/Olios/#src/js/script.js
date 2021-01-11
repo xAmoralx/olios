@@ -1,31 +1,25 @@
-function testWebP(callback) {
-    var webP = new Image();
-    webP.onload = webP.onerror = function () {
-    callback(webP.height == 2);
-    };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-}
-testWebP(function (support) {
-    if (support == true) {
-    document.querySelector('body').classList.add('webp');
-    }else{
-    document.querySelector('body').classList.add('no-webp');
+$('.header__burger').click(function() {
+    $('.header__menu').fadeToggle(400);
+
+    if ($('.header__burger').hasClass('header__burger_active')) {
+        $('.header__burger').removeClass('header__burger_active');
+    } else {
+        $('.header__burger').addClass('header__burger_active');
     }
 });
 
-$('.header__burger').click(function() {
-//    $('.header__menu').addClass('header__menu_active')
-    $('.header__menu').fadeToggle(400);
-});
-
-$('.header__burger').click(function() {
-        $('.header__burger').ClassToggleSwitch('.header__burger_active');
-        $('.burger__wrap').ClassToggleSwitch('.burger__wrap_active');
-        $('.header__burger span').ClassToggleSwitch('.header__burger_active span');
-        $('.header__burger::before').ClassToggleSwitch('.header__burger_active::before');
-        $('.header__burger::after').ClassToggleSwitch('.header__burger_active::after');
-       // $('.header__menu').fadeToggle(400);
-    });
+//$('.header__burger_active').click(function() {
+//        $('.header__burger_active').addClass('header__burger');
+//        $('.header__burger_active').removeClass('header__burger_active');
+//        $('.burger__wrap_active').addClass('burger__wrap');
+//        $('.burger__wrap_active').removeClass('burger__wrap_active');
+//        $('.header__burger_active span').addClass('header__burger span');
+//        $('.header__burger_active span').removeClass('header__burger_active span');
+//        $('.header__burger_active::before').addClass('header__burger::before');
+//        $('.header__burger_active::before').removeClass('header__burger_active::before');
+//        $('.header__burger_active::after').addClass('header__burger::after');
+//        $('.header__burger_active::after').removeClass('header__burger_active::after');
+//});
 
 $('h1').hover(function () { 
     $('h1').addClass('animate__animated animate__bounce')

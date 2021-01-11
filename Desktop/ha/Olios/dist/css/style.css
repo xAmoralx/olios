@@ -211,59 +211,6 @@ h3 {
 }
 
 .header__burger {
-  display: block;
-  position: relative;
-  width: 13px;
-  height: 12px;
-}
-
-.header .burger__wrap {
-  position: absolute;
-  background-color: white;
-  padding: 20px;
-  display: block;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  border-radius: 50%;
-  border: solid 0.5px #e9e9e9;
-}
-
-.header__burger span {
-  background-color: #0023ff;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  left: 0;
-  top: 5px;
-}
-
-.header__burger::before,
-.header__burger::after {
-  content: "";
-  background-color: #0023ff;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  left: 0;
-}
-
-.header__burger::before {
-  top: 0;
-}
-
-.header__burger::after {
-  bottom: 0;
-}
-
-.header__burger_active {
-  display: block;
-  position: relative;
-  width: 13px;
-  height: 12px;
-}
-
-.header .burger__wrap_active {
   position: absolute;
   background-color: white;
   padding: 20px;
@@ -276,7 +223,44 @@ h3 {
   z-index: 5;
 }
 
-.header__burger_active span {
+.header__burger_active {
+  position: absolute;
+  background-color: white;
+  padding: 20px;
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 50%;
+  border: solid 0.5px #e9e9e9;
+}
+
+.header__burger_active .header__burger-icon span {
+  display: none;
+}
+
+.header__burger_active .header__burger-icon::before {
+  top: 6px;
+  -webkit-transform: skewY(45deg);
+      -ms-transform: skewY(45deg);
+          transform: skewY(45deg);
+}
+
+.header__burger_active .header__burger-icon::after {
+  bottom: 4px;
+  -webkit-transform: skewY(135deg);
+      -ms-transform: skewY(135deg);
+          transform: skewY(135deg);
+}
+
+.header__burger-icon {
+  display: block;
+  position: relative;
+  width: 13px;
+  height: 12px;
+}
+
+.header__burger-icon span {
   background-color: #0023ff;
   position: absolute;
   width: 100%;
@@ -285,8 +269,8 @@ h3 {
   top: 5px;
 }
 
-.header__burger_active::before,
-.header__burger_active::after {
+.header__burger-icon::before,
+.header__burger-icon::after {
   content: "";
   background-color: #0023ff;
   position: absolute;
@@ -295,11 +279,11 @@ h3 {
   left: 0;
 }
 
-.header__burger_active::before {
+.header__burger-icon::before {
   top: 0;
 }
 
-.header__burger_active::after {
+.header__burger-icon::after {
   bottom: 0;
 }
 
