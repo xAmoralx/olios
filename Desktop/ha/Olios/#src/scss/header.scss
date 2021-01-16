@@ -36,6 +36,7 @@ h3 {
     text-align: center;
     width: 100%;
     overflow: hidden;
+    margin-left: 2%;
     }
     // .header__view-button
 
@@ -55,6 +56,48 @@ h3 {
     position: relative;
     z-index: 5;
     }
+
+	// .header__left-column
+
+	&__left-column {
+        display: flex;
+        width: 8%;
+        z-index: 5;
+        background-color: #fff;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        
+        &-icon {
+            padding: 0;
+        
+            & li:nth-child(1) {
+                margin-top: 30px;
+            }
+
+            & li:nth-child(2) {
+                margin-top: 148px;
+            }
+
+            & li:nth-child(3) {
+                margin-top: 82px;
+            }
+
+            & li:nth-child(4) {
+                margin-top: 82px;
+            }
+
+            & li:nth-child(5) {
+                position: absolute;
+                bottom: 0;
+                margin-bottom: 50px;
+                margin-left: 8px;
+            }
+        }
+	}
+
     // .header__burger
 
     &__burger {
@@ -197,5 +240,19 @@ h3 {
         font-family: "LatoRegular";
         font-size: 18px;
     }
-};
+
+	// .header__bg-button
+
+	&__bg-button {
+        width: 100px;
+        z-index: 15;
+        position: absolute;
+        bottom: 0;
+        right: 320px;
+        margin-bottom: 80px;
+        //margin-right: 330px;
+	}
+
+
+}
 

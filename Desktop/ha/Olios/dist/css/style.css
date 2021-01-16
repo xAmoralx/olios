@@ -193,6 +193,7 @@ h3 {
   text-align: center;
   width: 100%;
   overflow: hidden;
+  margin-left: 2%;
 }
 
 .header__view-button {
@@ -208,6 +209,49 @@ h3 {
   margin-top: 40px;
   position: relative;
   z-index: 5;
+}
+
+.header__left-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 8%;
+  z-index: 5;
+  background-color: #fff;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__left-column-icon {
+  padding: 0;
+}
+
+.header__left-column-icon li:nth-child(1) {
+  margin-top: 30px;
+}
+
+.header__left-column-icon li:nth-child(2) {
+  margin-top: 148px;
+}
+
+.header__left-column-icon li:nth-child(3) {
+  margin-top: 82px;
+}
+
+.header__left-column-icon li:nth-child(4) {
+  margin-top: 82px;
+}
+
+.header__left-column-icon li:nth-child(5) {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 50px;
+  margin-left: 8px;
 }
 
 .header__burger {
@@ -357,6 +401,15 @@ h3 {
   color: #c1c1c1;
   font-family: "LatoRegular";
   font-size: 18px;
+}
+
+.header__bg-button {
+  width: 100px;
+  z-index: 15;
+  position: absolute;
+  bottom: 0;
+  right: 320px;
+  margin-bottom: 80px;
 }
 @supports (-webkit-appearance:none){
 body{background-image:url(../img/main-bg-img.webp)}
