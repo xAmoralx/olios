@@ -31,10 +31,6 @@ $md3: 479.98;
 body {
     color: #000;
     font-size: 14px;
-    background-image: url(../img/main-bg-img.jpg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
     &._lock{
         overflow: hidden;
     }
@@ -48,8 +44,24 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    &._loaded{
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &_bg-1 {
+        background-image: url(../img/main-bg-img.jpg);
+    }
+    
+    &_bg-2 {
+        background-image: url(../img/bg-2.jpg);
+    }
 
+    &_bg-3 {
+        background-image: url(../img/bg-3.jpg);
+    }
+
+    &_bg-4 {
+        background-image: url(../img/bg-4.jpg);
     }
 }
 //</Оболочка>
@@ -59,7 +71,7 @@ body {
     max-width: $maxWidthContainer + px;
     margin: 0 auto;
     padding: 0px 20px;
-    
+
 }
 //</Основная сетка>
 

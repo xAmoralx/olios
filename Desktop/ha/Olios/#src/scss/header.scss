@@ -75,18 +75,22 @@ h3 {
         
             & li:nth-child(1) {
                 margin-top: 30px;
+                transform: scale(0.8);
             }
 
             & li:nth-child(2) {
                 margin-top: 148px;
+                transform: scale(0.8);
             }
 
             & li:nth-child(3) {
                 margin-top: 82px;
+                transform: scale(0.8);
             }
 
             & li:nth-child(4) {
                 margin-top: 82px;
+                transform: scale(0.8);
             }
 
             & li:nth-child(5) {
@@ -94,6 +98,7 @@ h3 {
                 bottom: 0;
                 margin-bottom: 50px;
                 margin-left: 8px;
+                transform: scale(0.8);
             }
         }
 	}
@@ -208,6 +213,7 @@ h3 {
                 margin-left: 36px;
                 position: relative;
                 top: 20px;
+                transform: scale(0.8);
             }
             &:nth-child(3)::after {
                 content: url(..//img/icon/header/for-kids.jpg);
@@ -244,13 +250,18 @@ h3 {
 	// .header__bg-button
 
 	&__bg-button {
-        width: 100px;
+        width: 200px;
         z-index: 15;
         position: absolute;
         bottom: 0;
         right: 320px;
         margin-bottom: 80px;
         //margin-right: 330px;
+
+        & input {
+            margin-right: 25px;
+            transform: scale(0.8);
+        }
 	}
 
 

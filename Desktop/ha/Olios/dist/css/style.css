@@ -119,10 +119,6 @@ h6 {
 body {
   color: #000;
   font-size: 14px;
-  background-image: url(../img/main-bg-img.jpg);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 body._lock {
@@ -140,6 +136,25 @@ body._lock {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper_bg-1 {
+  background-image: url(../img/main-bg-img.jpg);
+}
+
+.wrapper_bg-2 {
+  background-image: url(../img/bg-2.jpg);
+}
+
+.wrapper_bg-3 {
+  background-image: url(../img/bg-3.jpg);
+}
+
+.wrapper_bg-4 {
+  background-image: url(../img/bg-4.jpg);
 }
 
 ._container {
@@ -233,18 +248,30 @@ h3 {
 
 .header__left-column-icon li:nth-child(1) {
   margin-top: 30px;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .header__left-column-icon li:nth-child(2) {
   margin-top: 148px;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .header__left-column-icon li:nth-child(3) {
   margin-top: 82px;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .header__left-column-icon li:nth-child(4) {
   margin-top: 82px;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .header__left-column-icon li:nth-child(5) {
@@ -252,6 +279,9 @@ h3 {
   bottom: 0;
   margin-bottom: 50px;
   margin-left: 8px;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .header__burger {
@@ -374,6 +404,9 @@ h3 {
   margin-left: 36px;
   position: relative;
   top: 20px;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .header__list li:nth-child(3)::after {
@@ -404,13 +437,23 @@ h3 {
 }
 
 .header__bg-button {
-  width: 100px;
+  width: 200px;
   z-index: 15;
   position: absolute;
   bottom: 0;
   right: 320px;
   margin-bottom: 80px;
 }
+
+.header__bg-button input {
+  margin-right: 25px;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
 @supports (-webkit-appearance:none){
-body{background-image:url(../img/main-bg-img.webp)}
+.wrapper_bg-1{background-image:url(../img/main-bg-img.webp)}
+.wrapper_bg-2{background-image:url(../img/bg-2.webp)}
+.wrapper_bg-3{background-image:url(../img/bg-3.webp)}
+.wrapper_bg-4{background-image:url(../img/bg-4.webp)}
 }

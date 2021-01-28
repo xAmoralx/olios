@@ -8,6 +8,41 @@ $('.header__burger').click(function() {
     }
 });
 
+function bgSwitcher (value) {
+    if (value) {
+        $('input[value=' + value + ']').prop('checked', true);
+    } 
+
+    let inputValue = $('input[name=bg-switcher]:checked').val();
+    let wrapper = $('.wrapper');
+
+    wrapper.removeClass();
+    wrapper.addClass('wrapper wrapper_bg-' + inputValue);
+}
+
+let currentSlide = 1;
+
+function getNextSlideNumber () {
+    return currentSlide + 1;
+}
+
+setInterval(function() {
+    if (currentSlide === 4) {
+        currentSlide = 1;
+    } else {
+        currentSlide = getNextSlideNumber();
+    }
+
+    bgSwitcher(currentSlide);
+}, 5000);
+
+$('.header__bg-button input').click(function(){
+    bgSwitcher();  
+});
+
+
+
+
 //$('.header__burger_active').click(function() {
 //        $('.header__burger_active').addClass('header__burger');
 //        $('.header__burger_active').removeClass('header__burger_active');
