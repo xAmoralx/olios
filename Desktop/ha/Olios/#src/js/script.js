@@ -1,10 +1,10 @@
-$('.header__burger').click(function() {
-    $('.header__menu').fadeToggle(400);
+$('.container__burger').click(function() {
+    $('.container__menu').fadeToggle(400);
 
-    if ($('.header__burger').hasClass('header__burger_active')) {
-        $('.header__burger').removeClass('header__burger_active');
+    if ($('.container__burger').hasClass('container__burger_active')) {
+        $('.container__burger').removeClass('container__burger_active');
     } else {
-        $('.header__burger').addClass('header__burger_active');
+        $('.container__burger').addClass('container__burger_active');
     }
 });
 
@@ -36,7 +36,7 @@ setInterval(function() {
     bgSwitcher(currentSlide);
 }, 5000);
 
-$('.header__bg-button input').click(function(){
+$('.container__bg-button input').click(function(){
     bgSwitcher();  
 });
 
