@@ -1,0 +1,267 @@
+.categories-wrapper {
+    background-color: #f0f0f0;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categories-container {
+    display: flex;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-top: 5%;
+    max-width: $maxWidthContainer + px;
+    flex-direction: column;
+
+    & a {
+        font-family: "LatoBold";
+        font-size: 18px;
+        align-self: center;
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+}
+
+.categories-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 7%;
+
+    & li {
+        
+        &:nth-child(1) {
+            font-family: "LatoLight";
+            font-size: 72px;
+        }
+
+        &:nth-child(2) {
+            font-family: "LatoRegular";
+            font-size: 18px;
+            color: #c1c1c1;
+            align-self: center;
+            position: relative;
+            top: -20px;
+        }
+
+        &:nth-child(2)::after {
+            content: url(..//img/icon/header/living-room.png);
+            margin-left: 36px;
+            position: relative;
+            top: 20px;
+        }
+    }
+}
+.categories-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &-row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 4%;
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 15px 15px;
+            margin-left: 7px;
+            margin-bottom: 0;
+        
+            &:nth-child(1) {
+                width: 30%;
+                height: 30%;
+                
+                & li:nth-child(1) {
+                    content: url(..//img/icon/header/seat.png);
+                }
+
+                & li:nth-child(2) {
+                    font-family: "LatoLight";
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                }
+
+                & li:nth-child(3) {
+                    font-family: "LatoLight";
+                    font-size: 18px;
+                    color: #c1c1c1;
+                    margin-bottom: 19px;
+                }
+
+                & li:nth-child(4) {
+                    font-family: "LatoBold";
+                    font-size: 18px;
+                    color: #0023ff;
+                }
+            }
+            &:nth-child(2) {
+                width: 54%;
+                justify-content: flex-start;  
+                margin-top: 15%;
+                
+                & li:nth-child(1) {
+                    font-family: "LatoLight";
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                }
+
+                & li:nth-child(2) {
+                    font-family: "LatoLight";
+                    font-size: 18px;
+                    color: #c1c1c1;
+                    margin-bottom: 71px;
+                }
+
+                & li:nth-child(3) {
+                    font-family: "LatoBold";
+                    font-size: 18px;
+                    color: #0023ff;
+                }
+            }
+        }
+        &-2 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 4%;
+
+            &-items {
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                padding: 15px 15px;
+                margin-left: 7px;
+                margin-bottom: 0;
+
+                &:nth-child(1) {
+                    width: 30%;
+                    height: 30%;
+
+                    & li:nth-child(1) {
+                        content: url('..//img/icon/header/egg.png');
+                    }
+                
+                    & li:nth-child(2) {
+                        font-family: "LatoLight";
+                        font-size: 30px;
+                        margin-bottom: 12px;
+                    }
+                
+                    & li:nth-child(3) {
+                        font-family: "LatoLight";
+                        font-size: 18px;
+                        color: #c1c1c1;
+                        margin-bottom: 19px;
+                    }
+                
+                    & li:nth-child(4) {
+                        font-family: "LatoBold";
+                        font-size: 18px;
+                        color: #0023ff;
+                    }
+                }
+                &:nth-child(2) {
+                    width: 54%;
+                    justify-content: flex-start;  
+                    margin-top: 15%;
+                    
+                    & li:nth-child(1) {
+                        font-family: "LatoLight";
+                        font-size: 30px;
+                        margin-bottom: 12px;
+                    }
+    
+                    & li:nth-child(2) {
+                        font-family: "LatoLight";
+                        font-size: 18px;
+                        color: #c1c1c1;
+                        margin-bottom: 71px;
+                    }
+    
+                    & li:nth-child(3) {
+                        font-family: "LatoBold";
+                        font-size: 18px;
+                        color: #0023ff;
+                    }
+                }
+                &:nth-child(3) {
+                    width: 30%;
+                    height: 30%;
+                    margin-left: 4%;
+
+                    & li:nth-child(1) {
+                        content: url('..//img/icon/header/chair.png');
+                    }
+                
+                    & li:nth-child(2) {
+                        font-family: "LatoLight";
+                        font-size: 30px;
+                        margin-bottom: 12px;
+                    }
+                
+                    & li:nth-child(3) {
+                        font-family: "LatoLight";
+                        font-size: 18px;
+                        color: #c1c1c1;
+                        margin-bottom: 19px;
+                    }
+                
+                    & li:nth-child(4) {
+                        font-family: "LatoBold";
+                        font-size: 18px;
+                        color: #0023ff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.categories-content-row-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 15px 15px;
+    width: 67%;
+    margin-left: 4%;
+
+    &-pic {
+        background-image: url('..//img/icon/header/tabble.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100%;
+        width: 100%;
+    }
+}
+
+.categories-content-row-2-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    padding: 15px 15px;
+    width: 32%;
+    margin-left: 4%;
+
+    &-pic {
+        background-image: url('..//img/icon/header/bed.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 100%;
+        width: 100%;
+    }
+}
+
+
