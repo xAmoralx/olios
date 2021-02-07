@@ -69,199 +69,76 @@
         flex-direction: row;
         width: 100%;
         margin-bottom: 4%;
+    }
+}
 
-        &-items {
-            display: flex;
-            flex-direction: column;
-            background-color: white;
-            padding: 15px 15px;
-            margin-left: 7px;
-            margin-bottom: 0;
+.categories-content-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px 15px;
+    margin-left: 7px;
+    margin-bottom: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 20%;
+
+    &__name {
+        font-family: "LatoLight";
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    &__comment {
+        font-family: "LatoLight";
+        font-size: 18px;
+        color: #c1c1c1;
+        margin-bottom: 19px;
+    }
+    &__price {
+        font-family: "LatoBold";
+        font-size: 18px;
+        color: #0023ff;
+    }
+
+    &__img {
+        display: flex;
+        align-self: center;
+    }
+}
+
+.categories-content-big-item {
+    display: flex;
+    background-color: white;
+    padding: 15px 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    flex-grow: 4;
+    flex-shrink: 0;
+    justify-content: center;
+
+    &__text {
         
-            &:nth-child(1) {
-                width: 30%;
-                height: 30%;
-                
-                & li:nth-child(1) {
-                    content: url(..//img/icon/header/seat.png);
-                }
-
-                & li:nth-child(2) {
-                    font-family: "LatoLight";
-                    font-size: 30px;
-                    margin-bottom: 12px;
-                }
-
-                & li:nth-child(3) {
-                    font-family: "LatoLight";
-                    font-size: 18px;
-                    color: #c1c1c1;
-                    margin-bottom: 19px;
-                }
-
-                & li:nth-child(4) {
-                    font-family: "LatoBold";
-                    font-size: 18px;
-                    color: #0023ff;
-                }
-            }
-            &:nth-child(2) {
-                width: 54%;
-                justify-content: flex-start;  
-                margin-top: 15%;
-                
-                & li:nth-child(1) {
-                    font-family: "LatoLight";
-                    font-size: 30px;
-                    margin-bottom: 12px;
-                }
-
-                & li:nth-child(2) {
-                    font-family: "LatoLight";
-                    font-size: 18px;
-                    color: #c1c1c1;
-                    margin-bottom: 71px;
-                }
-
-                & li:nth-child(3) {
-                    font-family: "LatoBold";
-                    font-size: 18px;
-                    color: #0023ff;
-                }
-            }
-        }
-        &-2 {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            margin-bottom: 4%;
-
-            &-items {
-                display: flex;
-                flex-direction: column;
-                background-color: white;
-                padding: 15px 15px;
-                margin-left: 7px;
-                margin-bottom: 0;
-
-                &:nth-child(1) {
-                    width: 30%;
-                    height: 30%;
-
-                    & li:nth-child(1) {
-                        content: url('..//img/icon/header/egg.png');
-                    }
-                
-                    & li:nth-child(2) {
-                        font-family: "LatoLight";
-                        font-size: 30px;
-                        margin-bottom: 12px;
-                    }
-                
-                    & li:nth-child(3) {
-                        font-family: "LatoLight";
-                        font-size: 18px;
-                        color: #c1c1c1;
-                        margin-bottom: 19px;
-                    }
-                
-                    & li:nth-child(4) {
-                        font-family: "LatoBold";
-                        font-size: 18px;
-                        color: #0023ff;
-                    }
-                }
-                &:nth-child(2) {
-                    width: 54%;
-                    justify-content: flex-start;  
-                    margin-top: 15%;
-                    
-                    & li:nth-child(1) {
-                        font-family: "LatoLight";
-                        font-size: 30px;
-                        margin-bottom: 12px;
-                    }
-    
-                    & li:nth-child(2) {
-                        font-family: "LatoLight";
-                        font-size: 18px;
-                        color: #c1c1c1;
-                        margin-bottom: 71px;
-                    }
-    
-                    & li:nth-child(3) {
-                        font-family: "LatoBold";
-                        font-size: 18px;
-                        color: #0023ff;
-                    }
-                }
-                &:nth-child(3) {
-                    width: 30%;
-                    height: 30%;
-                    margin-left: 4%;
-
-                    & li:nth-child(1) {
-                        content: url('..//img/icon/header/chair.png');
-                    }
-                
-                    & li:nth-child(2) {
-                        font-family: "LatoLight";
-                        font-size: 30px;
-                        margin-bottom: 12px;
-                    }
-                
-                    & li:nth-child(3) {
-                        font-family: "LatoLight";
-                        font-size: 18px;
-                        color: #c1c1c1;
-                        margin-bottom: 19px;
-                    }
-                
-                    & li:nth-child(4) {
-                        font-family: "LatoBold";
-                        font-size: 18px;
-                        color: #0023ff;
-                    }
-                }
-            }
-        }
     }
 }
 
-.categories-content-row-wrapper {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 15px 15px;
-    width: 67%;
-    margin-left: 4%;
-
-    &-pic {
-        background-image: url('..//img/icon/header/tabble.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        min-height: 100%;
-        width: 100%;
+.big-item-text {
+    &__name {
+        font-family: "LatoLight";
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+    &__comment {
+        font-family: "LatoLight";
+        font-size: 18px;
+        color: #c1c1c1;
+        margin-bottom: 19px;
+    }
+    &__price {
+        font-family: "LatoBold";
+        font-size: 18px;
+        color: #0023ff;
     }
 }
 
-.categories-content-row-2-wrapper {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    padding: 15px 15px;
-    width: 32%;
-    margin-left: 4%;
-
-    &-pic {
-        background-image: url('..//img/icon/header/bed.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        min-height: 100%;
-        width: 100%;
-    }
-}
 
 
